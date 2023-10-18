@@ -10,6 +10,21 @@ from functools import wraps
 from typing import Callable, Optional, Union
 
 
+def replay(method: Callable):
+    count_key = method.__qualname__
+    input_key = f'{method.__qualname__}:inputs'
+    output_key = f'{method.__qualname__}:outputs'
+    r = redis.Redis()
+
+    count = r.get(count_key)
+    inputs = r.get(input_key)
+    outputs = r.get(output_key)
+
+    print(f'{method.__qualname__} was called {int(count)} times')
+
+    print(inputs)
+
+
 def count_calls(method: Callable) -> Callable:
     """_summary_
 
