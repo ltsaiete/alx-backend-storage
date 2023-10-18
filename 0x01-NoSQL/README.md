@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+At the end of this project, you are expected to be able to <a href="/rltoken/9u20uNESC1dnTNowO5waNQ" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:
 
 ### General
 
